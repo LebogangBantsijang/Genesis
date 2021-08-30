@@ -14,7 +14,8 @@
   ~    limitations under the License.
   -->
 
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -26,6 +27,10 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:hint="@string/email_address"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
         app:boxBackgroundColor="@null"
         app:boxBackgroundMode="outline"
         app:endIconMode="clear_text"
@@ -52,6 +57,10 @@
         app:counterTextAppearance="@style/TextAppearance.MaterialComponents.Caption"
         app:endIconMode="password_toggle"
         app:hintEnabled="true"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
         app:startIconDrawable="@drawable/ic_password_ios">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -73,13 +82,17 @@
         app:boxBackgroundMode="outline"
         app:endIconMode="clear_text"
         app:hintEnabled="true"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
         app:startIconDrawable="@drawable/ic_dog_tag_ios">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/usernameEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword|textWebPassword"
+            android:inputType="text"
             android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,7 +103,9 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginTop="12dp"
-        app:cornerRadius="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="4dp"
         android:enabled="false"
         android:text="@string/create_new"
         android:textAlignment="center"

@@ -29,6 +29,10 @@
         app:boxBackgroundColor="@null"
         app:boxBackgroundMode="outline"
         app:endIconMode="clear_text"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
         app:startIconDrawable="@drawable/ic_email_ios">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -48,6 +52,11 @@
         android:hint="@string/password"
         app:boxBackgroundColor="@null"
         app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:counterEnabled="true"
         app:endIconMode="password_toggle"
         app:hintEnabled="true"
         app:startIconDrawable="@drawable/ic_password_ios">
@@ -71,9 +80,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:elegantTextHeight="true"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:minHeight="32dp"
         android:text="@string/forgot_password"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textStyle="bold" />
@@ -84,7 +90,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
-        app:cornerRadius="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="4dp"
         android:enabled="false"
         android:text="@string/sign_in"
         android:textAlignment="center"

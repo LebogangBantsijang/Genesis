@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.lebogang.vibe">
+    package="com.lebogang.gensysmusic">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -11,33 +11,40 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.lebogang.vibe.VibeApplication"
+        android:name="com.lebogang.gensysmusic.GensysApp"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.Genesis20.System">
-        <activity android:name="com.lebogang.vibe.ui.stream.StreamMusicActivity"/>
-        <activity android:name="com.lebogang.vibe.ui.stream.StreamArtistsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.stream.StreamAlbumsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.stream.StreamPlaylistsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.stream.StreamFavouritesActivity" />
-        <activity android:name="com.lebogang.vibe.ui.stream.StreamDetailsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.user.ForgotPasswordActivity" />
-        <activity android:name="com.lebogang.vibe.ui.user.PhoneActivity" />
-        <activity android:name="com.lebogang.vibe.ui.user.SignInActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.stream.StreamMusicActivity"/>
+        <activity android:name="com.lebogang.gensysmusic.ui.stream.StreamArtistsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.stream.StreamAlbumsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.stream.StreamPlaylistsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.stream.StreamFavouritesActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.stream.StreamDetailsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.user.ForgotPasswordActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.user.PhoneActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.user.SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name="com.lebogang.vibe.ui.stream.StreamActivity"
-            android:parentActivityName="com.lebogang.vibe.ui.local.HomeActivity" />
+            android:name="com.lebogang.gensysmusic.ui.stream.StreamActivity"
+            android:parentActivityName="com.lebogang.gensysmusic.ui.local.HomeActivity" />
         <activity
-            android:name="com.lebogang.vibe.ui.SettingsActivity"
-            android:parentActivityName="com.lebogang.vibe.ui.local.HomeActivity" />
-        <activity android:name="com.lebogang.vibe.ui.history.HistoryActivity" />
+            android:name="com.lebogang.gensysmusic.ui.SettingsActivity"
+            android:parentActivityName="com.lebogang.gensysmusic.ui.local.HomeActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.history.HistoryActivity" />
         <activity
-            android:name="com.lebogang.vibe.ui.player.PlayerActivity"
+            android:name="com.lebogang.gensysmusic.ui.player.PlayerActivity"
             android:launchMode="singleInstance" />
         <activity
-            android:name="com.lebogang.vibe.ui.local.SearchActivity"
+            android:name="com.lebogang.gensysmusic.ui.local.SearchActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -47,31 +54,31 @@
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
-        <activity android:name="com.lebogang.vibe.ui.local.playlist.PlaylistMembersAddActivity" />
-        <activity android:name="com.lebogang.vibe.ui.charts.spotify.SpotifyDetailsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.playlist.PlaylistDetailsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.charts.spotify.SpotifyActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.GenreDetailsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.InformationActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.EditActivity" />
-        <activity android:name="com.lebogang.vibe.ui.charts.deezer.DeezerArtistDetailsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.charts.deezer.DeezerAlbumDetailsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.charts.deezer.DeezerArtistActivity" />
-        <activity android:name="com.lebogang.vibe.ui.charts.deezer.DeezerAlbumActivity" />
-        <activity android:name="com.lebogang.vibe.ui.charts.deezer.DeezerMusicActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.playlist.PlaylistMembersAddActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.charts.spotify.SpotifyDetailsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.playlist.PlaylistDetailsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.charts.spotify.SpotifyActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.GenreDetailsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.InformationActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.EditActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.charts.deezer.DeezerArtistDetailsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.charts.deezer.DeezerAlbumDetailsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.charts.deezer.DeezerArtistActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.charts.deezer.DeezerAlbumActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.charts.deezer.DeezerMusicActivity" />
         <activity
-            android:name="com.lebogang.vibe.ui.charts.ChartsActivity"
-            android:parentActivityName="com.lebogang.vibe.ui.local.HomeActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.ArtistDetailsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.AlbumDetailsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.MusicActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.FavouriteActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.playlist.PlaylistActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.GenresActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.ArtistsActivity" />
-        <activity android:name="com.lebogang.vibe.ui.local.AlbumsActivity" />
+            android:name="com.lebogang.gensysmusic.ui.charts.ChartsActivity"
+            android:parentActivityName="com.lebogang.gensysmusic.ui.local.HomeActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.ArtistDetailsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.AlbumDetailsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.MusicActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.FavouriteActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.playlist.PlaylistActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.GenresActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.ArtistsActivity" />
+        <activity android:name="com.lebogang.gensysmusic.ui.local.AlbumsActivity" />
         <activity
-            android:name="com.lebogang.vibe.ui.user.UserActivity"
+            android:name="com.lebogang.gensysmusic.ui.user.UserActivity"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.GET_CONTENT" />
@@ -83,14 +90,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.lebogang.vibe.ui.local.HomeActivity"
+            android:name="com.lebogang.gensysmusic.ui.local.HomeActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
             <meta-data
                 android:name="android.app.default_searchable"
                 android:value=".ui.local.SearchActivity" />
@@ -101,12 +102,12 @@
             android:value="ca-app-pub-1201104812617516~7259933333" />
 
         <service
-            android:name="com.lebogang.vibe.service.MusicService"
+            android:name="com.lebogang.gensysmusic.service.MusicService"
             android:enabled="true"
             android:exported="false" />
 
         <activity
-            android:name="com.lebogang.vibe.ui.MainActivity"
+            android:name="com.lebogang.gensysmusic.ui.MainActivity"
             android:launchMode="singleInstance"
             tools:targetApi="n" />
     </application>

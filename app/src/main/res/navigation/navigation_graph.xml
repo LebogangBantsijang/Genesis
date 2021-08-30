@@ -23,145 +23,145 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.lebogang.vibe.ui.fragments.HomeFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.HomeFragment"
         tools:layout="@layout/fragment_home"
         android:label="@string/app_name"/>
     <fragment
         android:id="@+id/songsFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.SongsFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.SongsFragment"
         tools:layout="@layout/fragment_songs"
         android:label="@string/songs" />
     <fragment
         android:id="@+id/statisticsFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.StatisticsFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.StatisticsFragment"
         android:label="@string/statistics"
         tools:layout="@layout/fragment_statistics"/>
     <fragment
         android:id="@+id/albumsFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.AlbumsFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.AlbumsFragment"
         android:label="@string/albums"
         tools:layout="@layout/fragment_albums"/>
     <fragment
         android:id="@+id/artistFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.ArtistFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.ArtistFragment"
         android:label="@string/artists"
         tools:layout="@layout/fragment_artists"/>
     <fragment
         android:id="@+id/editAudioFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.EditAudioFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.EditAudioFragment"
         android:label="@string/edit_tags"
         tools:layout="@layout/fragment_edit_audio"/>
     <fragment
         android:id="@+id/infoAudioFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.InfoAudioFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.InfoAudioFragment"
         android:label="@string/info"
         tools:layout="@layout/fragment_audio_info"/>
     <fragment
         android:id="@+id/playlistFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.PlaylistFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.PlaylistFragment"
         android:label="@string/playlists"
         tools:layout="@layout/fragment_playlist"/>
     <fragment
         android:id="@+id/viewAlbumFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.ViewAlbumFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.ViewAlbumFragment"
         android:label="@string/album_songs"
         tools:layout="@layout/fragment_view_album"/>
     <fragment
         android:id="@+id/viewArtistFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.ViewArtistFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.ViewArtistFragment"
         android:label="@string/artist_songs"
         tools:layout="@layout/fragment_artist_view"/>
     <fragment
         android:id="@+id/viewPlaylistFragment"
-        android:name="com.lebogang.vibe.ui.fragments.local.ViewPlaylistFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.local.ViewPlaylistFragment"
         android:label="@string/playlist_songs"
         tools:layout="@layout/fragment_view_playlist"/>
     <dialog
         android:id="@+id/audioOptionsDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.AudioOptionsDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.AudioOptionsDialog"
         tools:layout="@layout/dialog_audio_options"/>
     <dialog
         android:id="@+id/addPlaylistDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.AddPlaylistDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.AddPlaylistDialog"
         tools:layout="@layout/dialog_add_playlist"/>
     <dialog
         android:id="@+id/selectPlaylistDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.SelectPlaylistDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.SelectPlaylistDialog"
         tools:layout="@layout/item_local_select_playlist"/>
     <dialog
         android:id="@+id/updatePlaylistDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.UpdatePlaylistDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.UpdatePlaylistDialog"
         tools:layout="@layout/dialog_update_playlist"/>
     <dialog
         android:id="@+id/statisticsDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.StatisticsDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.StatisticsDialog"
         tools:layout="@layout/dialog_statistic"/>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.lebogang.vibe.ui.fragments.AboutFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.AboutFragment"
         android:label="@string/about"
         tools:layout="@layout/fragment_about"/>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.lebogang.vibe.ui.fragments.SettingsFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.SettingsFragment"
         android:label="@string/settings"
         tools:layout="@layout/fragment_settings"/>
     <dialog
         android:id="@+id/filterDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.FilterDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.FilterDialog"
         tools:layout="@layout/dialog_filter"/>
     <dialog
         android:id="@+id/queueDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.QueueDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.QueueDialog"
         tools:layout="@layout/dialog_queue"/>
     <dialog
         android:id="@+id/themeDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.ThemeDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.ThemeDialog"
         tools:layout="@layout/dialog_theme"/>
     <dialog
         android:id="@+id/playerBackgroundDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.PlayerBackgroundDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.PlayerBackgroundDialog"
         android:label="PlayerBackgroundDialog"
         tools:layout="@layout/dialog_player_background"/>
     <dialog
         android:id="@+id/audioProcessingDialog"
-        android:name="com.lebogang.vibe.ui.dialogs.AudioProcessingDialog"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.AudioProcessingDialog"
         android:label="AudioProcessingDialog"
         tools:layout="@layout/dialog_audio_fx"/>
 
     <fragment
         android:id="@+id/topSongsDeezerFragment"
-        android:name="com.lebogang.vibe.ui.fragments.deezer.DeezerTopSongsFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.deezer.DeezerTopSongsFragment"
         android:label="@string/online"
         tools:layout="@layout/fragment_deezer_songs"/>
     <fragment
         android:id="@+id/topAlbumsDeezerFragment"
-        android:name="com.lebogang.vibe.ui.fragments.deezer.DeezerTopAlbumsFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.deezer.DeezerTopAlbumsFragment"
         android:label="@string/online"
         tools:layout="@layout/fragment_deezer_albums"/>
     <fragment
         android:id="@+id/topArtistsDeezerFragment"
-        android:name="com.lebogang.vibe.ui.fragments.deezer.DeezerTopArtistsFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.deezer.DeezerTopArtistsFragment"
         android:label="@string/online"
         tools:layout="@layout/fragment_deezer_artists"/>
     <fragment
         android:id="@+id/deezerSearchFragment"
-        android:name="com.lebogang.vibe.ui.fragments.deezer.DeezerSearchFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.deezer.DeezerSearchFragment"
         android:label="@string/search"
         tools:layout="@layout/fragment_deezer_search"/>
     <dialog
         android:id="@+id/dialogDeezerPreview"
-        android:name="com.lebogang.vibe.ui.dialogs.DialogDeezerPreview"
+        android:name="com.lebogang.gensysmusic.ui.dialogs.DialogDeezerPreview"
         android:label="DialogDeezerPreview"
         tools:layout="@layout/dialog_deezer_preview"/>
     <fragment
         android:id="@+id/viewAlbumDeezerFragment"
-        android:name="com.lebogang.vibe.ui.fragments.deezer.ViewAlbumDeezerFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.deezer.ViewAlbumDeezerFragment"
         android:label="@string/album"
         tools:layout="@layout/fragment_deezer_view_album"/>
     <fragment
         android:id="@+id/viewArtistDeezerFragment"
-        android:name="com.lebogang.vibe.ui.fragments.deezer.ViewArtistDeezerFragment"
+        android:name="com.lebogang.gensysmusic.ui.fragments.deezer.ViewArtistDeezerFragment"
         android:label="@string/artist"
         tools:layout="@layout/fragment_deezer_view_artist"/>
 </navigation>
