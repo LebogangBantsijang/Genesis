@@ -36,7 +36,7 @@ import com.lebogang.gensysmusic.ui.local.HomeActivity
 import com.lebogang.gensysmusic.utils.GlideManager
 import com.lebogang.gensysmusic.utils.models.MusicAbstract
 
-class NotificationManager(private val context: Context) {
+class Notifications(private val context: Context) {
     private val channelId = "113"
     private val channelName = "GensysMusic"
     private val channelDescription = "Enjoy your music"

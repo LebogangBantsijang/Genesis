@@ -36,7 +36,7 @@ class MusicService:Service(){
     private val listenerMap = HashMap<String,OnStateChanged>()
     private lateinit var effectManager: EffectManager
     private lateinit var music: MusicAbstract
-    private lateinit var notificationManager: NotificationManager
+    private lateinit var notifications: Notifications
     private lateinit var broadcastReceiver: MusicBroadcastReceiver
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var repeatState:RepeatState
@@ -45,7 +45,7 @@ class MusicService:Service(){
         super.onCreate()
         focusManager = FocusManager(this,getFocusListener())
         effectManager = EffectManager(23)//get sessionId from media player
-        notificationManager = NotificationManager(this)
+        notifications = Notifications(this)
         broadcastReceiver = MusicBroadcastReceiver(this)
         registerReceiver(broadcastReceiver,MusicBroadcastReceiver.getIntentFilters())
         sharedPreferences = getSharedPreferences(Keys.PREFERENCE_NAME, Context.MODE_PRIVATE)
@@ -96,24 +96,24 @@ class MusicService:Service(){
         focusManager.requestFocus()
         this.music = music
         //play music 1st
-        startForeground(notificationManager.notificationId
-            ,notificationManager.getNotification(music,PlaybackState.PLAYING))
+        startForeground(notifications.notificationId
+            ,notifications.getNotification(music,PlaybackState.PLAYING))
     }
 
     fun play(){
         listenerMap.forEach { it.value.onPlayback(PlaybackState.PLAYING) }
         focusManager.requestFocus()
         //play music 1st
-        startForeground(notificationManager.notificationId
-            ,notificationManager.getNotification(music,PlaybackState.PLAYING))
+        startForeground(notifications.notificationId
+            ,notifications.getNotification(music,PlaybackState.PLAYING))
     }
 
     fun pause(){
         listenerMap.forEach { it.value.onPlayback(PlaybackState.PAUSED) }
         focusManager.abandonFocus()
         //play music 1st
-        startForeground(notificationManager.notificationId
-            ,notificationManager.getNotification(music,PlaybackState.PAUSED))
+        startForeground(notifications.notificationId
+            ,notifications.getNotification(music,PlaybackState.PAUSED))
     }
 
     fun stop(){
@@ -125,7 +125,7 @@ class MusicService:Service(){
     }
 
     fun playToggle(){
-
+        //finish later
     }
 
     fun skipTo(position:Int){
@@ -165,7 +165,7 @@ class MusicService:Service(){
         listenerMap.forEach{it.value.onRepeat(repeatState)}
     }
 
-    fun getCurrentPosition() = 0
+    fun getCurrentPosition() = queue.size
 
     @RequiresApi(Build.VERSION_CODES.P)
     fun setEffectGain(input:Float, type: InputType) = effectManager.setInput(input,type)
