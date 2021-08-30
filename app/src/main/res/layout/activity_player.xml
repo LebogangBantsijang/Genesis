@@ -49,21 +49,76 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/artist_drawable" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/playButton"
-            android:layout_width="wrap_content"
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="3" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:clickable="true"
-            android:contentDescription="@string/image"
-            android:focusable="true"
-            android:layout_marginBottom="8dp"
-            app:tint="@color/white"
-            app:rippleColor="@color/white"
-            app:backgroundTint="?colorPrimary"
-            app:fabSize="normal"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ic_play_ios" />
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timeStartTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_00_00" />
+
+            <ImageButton
+                android:id="@+id/repeatView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:contentDescription="@string/image"
+                android:padding="3dp"
+                android:src="@drawable/ic_repeat_none_ios" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/playButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:contentDescription="@string/image"
+                android:focusable="true"
+                app:elevation="0dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:tint="@color/white"
+                app:rippleColor="@color/white"
+                app:backgroundTint="?colorPrimary"
+                app:fabSize="normal"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_play_ios" />
+
+            <ImageButton
+                android:id="@+id/favouriteView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:contentDescription="@string/image"
+                android:padding="3dp"
+                android:src="@drawable/ic_melting_heart_ios" />
+
+            <TextView
+                android:id="@+id/timeEndTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/_00_00" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -128,80 +183,11 @@
             android:id="@+id/dateTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Overline"
             android:textColor="?android:textColorTertiary"
             android:layout_gravity="center_horizontal"
             android:text="@string/unknown" />
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/timeStartTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_00_00" />
-
-            <SeekBar
-                android:id="@+id/seekBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:max="10"
-                android:progress="3" />
-
-            <TextView
-                android:id="@+id/timeEndTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_00_00" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="8dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/repeatView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="?selectableItemBackground"
-                android:contentDescription="@string/image"
-                android:padding="4dp"
-                android:src="@drawable/ic_repeat_none_ios" />
-
-            <ImageButton
-                android:id="@+id/favouriteView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="?selectableItemBackground"
-                android:contentDescription="@string/image"
-                android:padding="4dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:src="@drawable/ic_melting_heart_ios" />
-
-            <ImageButton
-                android:id="@+id/volumeView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="?selectableItemBackground"
-                android:contentDescription="@string/image"
-                android:padding="4dp"
-                android:src="@drawable/ic_volume_ios" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
 
         <ImageButton
             android:id="@+id/queueView"
@@ -209,10 +195,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:alpha="0.5"
-            android:background="@drawable/player_drawable"
+            android:background="@null"
             android:contentDescription="@string/image"
-            android:padding="6dp"
-            android:src="@drawable/ic_musical_notes_ios" />
+            android:padding="4dp"
+            android:src="@drawable/ic_collapse_arrow_ios" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

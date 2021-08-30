@@ -15,3 +15,4 @@
 local.properties
 app/src/main/java/com/lebogang/vibe/ApiKeys.kt
 app/google-services.json
+/app/src/main/java/com/lebogang/gensysmusic/ApiKeys.kt

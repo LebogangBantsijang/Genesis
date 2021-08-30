@@ -218,7 +218,7 @@
     <string name="google">Google</string>
     <string name="phone">Phone</string>
     <string name="password">Password</string>
-    <string name="phone_number">Phone Number</string>
+    <string name="phone_number">Phone Number (+27...)</string>
     <string name="verification_code">Verification Code</string>
     <string name="request_code">Request Code</string>
     <string name="add_favourites">Add Favourites</string>
@@ -251,6 +251,7 @@
     <string name="random_artist">Random Artists</string>
     <string name="random_albums">Random Albums</string>
     <string name="your_playlist">Your Playlist</string>
+    <string name="failed">Failed</string>
 
     <string-array name="theme_options">
         <item>Light</item>

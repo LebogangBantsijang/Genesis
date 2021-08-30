@@ -24,6 +24,25 @@
         <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/Genesis20/app/src/main/res/menu/application_search_refresh.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/Genesis20/app/src/main/res/menu/application_settings_history.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/Genesis20/app/src/main/res/menu/application_toolbar_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/drawable/ic_double_right_ios.xml" value="0.240625" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/drawable/more_drawable.xml" value="0.240625" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/drawable/round_corners_drawable.xml" value="0.240625" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_album_details.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_artist_details.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_artists.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_forgot_password.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_genres.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_home.xml" value="0.1417763157894737" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_phone.xml" value="0.1417763157894737" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_player.xml" value="0.1417763157894737" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_search.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_settings.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_sign_in.xml" value="0.1417763157894737" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_stream.xml" value="0.1417763157894737" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/activity_stream_music.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/fragment_create_new.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/fragment_log_in.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/default.LAPTOP-J5N9T1TB/AndroidStudioProjects/VibeMusic/app/src/main/res/layout/layout_player.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
